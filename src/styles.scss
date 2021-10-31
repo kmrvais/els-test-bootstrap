@@ -1,0 +1,59 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$font-family-base: Arial, sans-serif;
+$font-size-base: 1.125rem;
+$line-height-base: 1.222;
+
+$border-radius: 3px;
+
+$danger: #DF2030;
+
+$input-border-color: #2F3441;
+$input-padding-y: 11px;
+$input-padding-x: 0;
+$input-color: #2F3441;
+
+$input-focus-border-color: #2F3441;
+$input-focus-box-shadow: none;
+
+$form-floating-label-opacity: 1;
+$form-floating-label-transform: translateY(-.5rem);
+$form-floating-padding-y: $input-padding-y;
+
+$input-btn-padding-y: 20px;
+$input-btn-padding-x: 31px;
+$input-btn-font-size: 16px;
+$input-btn-line-height: 1.125;
+
+$form-feedback-invalid-color: $danger;
+$form-validation-states: (
+        "valid": (
+                "color": $input-border-color,
+                "icon": ''
+        ),
+        "invalid": (
+                "color": $form-feedback-invalid-color,
+                "icon": ''
+        )
+) !default;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// 4. Include any optional Bootstrap components as you like
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+
+// 5. Add additional custom code here
+@import "components/btn-red/btn-red";
+@import "components/feedback-form/feedback-form";
+

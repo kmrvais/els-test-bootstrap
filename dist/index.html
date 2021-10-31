@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Empty project</title>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="/src.e31bb0bc.css"></head>
+<body>
+<div class="container">
+    <form class="form-floating needs-validation feedback-form" id="feedback-form" novalidate="">
+        <div class="form-floating">
+            <input type="text" class="form-control feedback-form__control" id="applicant" placeholder="Наименование заявителя" required="">
+            <div class="invalid-feedback">
+                Необходимо заполнить поле
+            </div>
+            <label class="feedback-form__label" for="applicant">Наименование заявителя</label>
+        </div>
+        <div class="form-floating">
+            <input type="text" class="form-control feedback-form__control" id="contactPerson" placeholder="Контактное лицо" required="">
+            <div class="invalid-feedback">
+                Необходимо заполнить поле
+            </div>
+            <label class="feedback-form__label" for="contactPerson">Контактное лицо</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="tel" class="form-control feedback-form__control" id="phone" placeholder="Телефон" aria-describedby="phoneHelp" required="">
+            <div class="invalid-feedback">
+                Необходимо заполнить поле
+            </div>
+            <label class="feedback-form__label" for="phone">Телефон</label>
+        </div>
+        <div id="phoneHelp" class="form-text">Просьба указать телефон с кодом города. В формате: (код города) номер
+            телефона
+        </div>
+        <div class="form-check">
+            <input class="form-check-input feedback-form__private-policy-check" type="checkbox" value="true" checked="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+                Оставляя заявку, вы принимаете условия Пользовательского соглашения
+                и Политики конфиденциальности.
+            </label>
+        </div>
+        <button type="submit" class="btn btn-red feedback-form__submit shadow-none ">Оставить заявку</button>
+    </form>
+</div>
+<script src="/src.e31bb0bc.js"></script>
+</body>
+</html>
